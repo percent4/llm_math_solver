@@ -6,6 +6,34 @@
 - 数据校验: data_synthesis/data_validator.py
 - 数据格式转换: data_synthesis/make_train_data.py
 
+生成的样例数据如下：
+
+```json
+[
+    {
+        "conversations": [
+            {
+                "from": "human",
+                "value": "题目：苹果的价格是每公斤3元，小明买了2.5公斤的苹果，他一共需要支付多少钱？"
+            },
+            {
+                "from": "gpt",
+                "value": "首先给出思考过程：这是一个简单的乘法问题，其中涉及到的是单价和数量的乘积计算。我们需要用苹果的单价乘以小明购买的苹果的重量来找出总金额。\n生成的Python代码如下：\n计算总金额的公式是： \\[ 总金额 = 单价 \\times 数量 \\] 在这个具体例子中，苹果的单价为3元每公斤，小明购买了2.5公斤。\n生成的Python代码如下：\n```python\ndef total_cost(price_per_kg, weight):\n    return price_per_kg * weight\n\n# 苹果的单价（每公斤）\nprice_per_kg = 3\n\n# 小明购买的苹果重量（公斤）\nweight = 2.5\n\n# 计算总金额\ncost = total_cost(price_per_kg, weight)\nprint('小明需要支付的总金额为:', cost)\n```\n"
+            },
+            {
+                "from": "human",
+                "value": "现在将上面的代码复制到Python环境中运行，我们应得到小明需要支付的总金额。运行结果将告诉我们具体的金额数值。 运行以上代码，输出会是： ```小明需要支付的总金额为: 7.5```"
+            },
+            {
+                "from": "gpt",
+                "value": "因此，小明购买2.5公斤苹果，总共需要支付7.5元。"
+            }
+        ]
+    },
+    ...
+]
+```
+
 ### 改进点
 
 后续将会改进的点如下：
@@ -26,4 +54,4 @@
 
 本项目将会形成一系列的文章与思考，欢迎关注与讨论。
 
-1. []()
+1. [NLP（九十七）大模型数学解题能力的初步探索](https://mp.weixin.qq.com/s?__biz=MzU2NTYyMDk5MQ==&mid=2247486824&idx=1&sn=fd6b36cf78aead227359606a7270516d&chksm=fcb9b4f8cbce3dee332335092f576c703ccdc55598cf45cb7f483f822ba5c72590019384d12a&token=321761101&lang=zh_CN#rd)
