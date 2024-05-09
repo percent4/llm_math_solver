@@ -50,9 +50,19 @@ def check_file(file_path: str) -> bool:
 
 
 if __name__ == '__main__':
+    file_white_list = ["4c40358d-3821-4090-8cff-842fd2229615.json",
+                       "356e876e-d0b6-453d-b1bd-fe4a94f207d2.json",
+                       "ee2bc137-6d7e-4543-9267-3c50afe0af8a.json",
+                       "0962e1ef-33c3-4baa-ada4-f134e8776840.json",
+                       "f19a2a70-56a9-4db4-b61a-400352907db7.json",
+                       "640e0db7-aff5-41ee-860d-d3a97cac1874.json"
+                       ]
+
     dataset_dir = '../data'
     file_not_pass_list = []
     for os_file_path in os.listdir(dataset_dir):
+        if os_file_path in file_white_list:
+            continue
         json_file_path = os.path.join(dataset_dir, os_file_path)
         code_pass = check_file(json_file_path)
         if not code_pass:

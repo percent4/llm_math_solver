@@ -1,15 +1,18 @@
-def coefficient_of_x3(n, a, b, k):
-    from math import factorial
-    C = factorial(n) / (factorial(k) * factorial(n - k))
-    coefficient = C * a**(n - k) * b**k
-    return coefficient
+import sympy as sp
 
-# 参数
-n = 6
-a = 1
-b = 2
-k = 3
+# 定义变量
+x = sp.symbols('x')
 
-# 计算系数
-coefficient = coefficient_of_x3(n, a, b, k)
-print('x^3 项的系数是:', coefficient)
+# 设置方程
+equation = x * (2*x + 3) - 119
+
+# 解方程
+sol = sp.solve(equation, x)
+
+# 提取实数根，因为宽度必须为正数
+real_solutions = [s.evalf() for s in sol if s.is_real and s > 0]
+
+width = real_solutions[0] if real_solutions else None
+length = (2 * width + 3) if width else None
+
+print(width, length)
