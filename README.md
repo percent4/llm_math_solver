@@ -5,6 +5,9 @@
 - 数据合成: data_synthesis/data_generation.py
 - 数据校验: data_synthesis/data_validator.py
 - 数据格式转换: data_synthesis/make_train_data.py
+- Web服务人工数据录入: data_synthesis/math_gen_server.py
+- 人工数据整理：data_synthesis/hand-make-train-data.py
+- 数据合并：data_synthesis/data_merge.py
 
 生成的样例数据如下：
 
@@ -34,6 +37,11 @@
 ]
 ```
 
+训练数据集组成如下（共`541`条）：
+
+- GPT-4生成: `451`条
+- WEB服务（GPT-4 few-shot生成，人工输入题目并检查）：`90`条
+
 ### 改进点
 
 后续将会改进的点如下：
@@ -49,6 +57,12 @@
 - [ ] 稳定性：大模型的生成文本或代码不稳定，变动较大，导致答案有时正确，有时不正确
 - [ ] 更优雅地数学解题过程与代码生成，有时候一道题目有更好的解法
 - [ ] 其它...
+
+### 数学能力测评
+
+- GSM8K
+- MATH
+- ...
 
 ### 文章与思考
 
