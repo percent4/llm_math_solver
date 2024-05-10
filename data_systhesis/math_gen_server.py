@@ -24,7 +24,7 @@ execution_desc = ["运行以上代码，输出会是： ",
 
 
 def get_system_prompt() -> str:
-    prompt = ["请解决下面的数学题。\n\n以下是一些示例：\n"]
+    prompt = ["观察下面的数学解题示例：\n"]
     i = 0
     files = choices(os.listdir('./save'), k=5)
     for file in files:
@@ -33,12 +33,20 @@ def get_system_prompt() -> str:
                 data = json.load(f)
                 i += 1
                 prompt.append(f"\n\n- 示例{i}: \n\n")
-                prompt += '\n'.join([f"{sample['from'].replace('human', 'user').replace('gpt', 'assistant')}: {sample['value']}" for sample in data['conversations']])
-    prompt.append("\n\n现在，请解决下面的数学题，注意解题过程要严格按照示例中的来，并给出解题过程中的Python代码。")
+                for sample in data['conversations']:
+                    role = sample['from'].replace('human', 'user').replace('gpt', 'assistant')
+                    content = sample['value']
+                    if '```python' in content and '\n```' in content:
+                        content = '```'.join(content.split('```')[:-1]) + '```'
+                    prompt.append("{}: {}\n".format(role, content))
+    prompt.append("\n\n现在，请解决下面的数学题，注意解题过程要严格按照示例中的来，必要时需要给出解题过程中的Python代码。")
     return ''.join(prompt)
 
 
 def first_turn_answer(query):
+    print('*' * 50)
+    print(get_system_prompt())
+    print('*' * 50)
     messages = [{'role': 'system', 'content': get_system_prompt()},
                 {"role": "user", "content": f"题目：{query}"}]
     result = client.chat.completions.create(messages=messages,
@@ -66,7 +74,7 @@ def first_turn_answer(query):
         code_reply = f"\n{code_reply_str}```{python_code_execution.strip()}```\n"
         messages.append({"role": "user", "content": code_reply})
         result = client.chat.completions.create(messages=messages,
-                                                model="gpt-4-turbo",
+                                                model="gpt-3.5-turbo",
                                                 temperature=0.1,
                                                 stream=True)
         second_reply = ""
