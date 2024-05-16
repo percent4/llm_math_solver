@@ -1,4 +1,6 @@
 .idea
-align_data
-data_systhesis/.env
-data_systhesis/tmp.py
+__pycache__
+*/__pycache__
+data_systhesis/*/.env
+data_systhesis/*/save
+eval/*/flagged
