@@ -2,10 +2,6 @@
 # @place: Pudong, Shanghai
 # @file: data_generator.py
 # @time: 2024/5/15 11:18
-# -*- coding: utf-8 -*-
-# @place: Pudong, Shanghai
-# @file: data_generator.py
-# @time: 2024/5/13 22:07
 import os
 import re
 import json

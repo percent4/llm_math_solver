@@ -29,7 +29,7 @@ def get_system_prompt() -> str:
     files = choices(os.listdir('save'), k=5)
     for file in files:
         if file.endswith('.json'):
-            with open(f'hand_make/save/{file}', 'r') as f:
+            with open(f'./save/{file}', 'r') as f:
                 data = json.load(f)
                 i += 1
                 prompt.append(f"\n\n- 示例{i}: \n\n")
@@ -51,7 +51,7 @@ def first_turn_answer(query):
     messages = [{'role': 'system', 'content': get_system_prompt()},
                 {"role": "user", "content": f"题目：{query}"}]
     result = client.chat.completions.create(messages=messages,
-                                            model="gpt-4-turbo",
+                                            model="gpt-4o",
                                             temperature=0.1,
                                             stream=True)
     first_reply = ""
@@ -88,7 +88,7 @@ def first_turn_answer(query):
 
 
 def write_to_json(query, tought, code, code_result, output):
-    file_path = f'hand_make/save/{str(uuid4())}.json'
+    file_path = f'./save/{str(uuid4())}.json'
     if code_result:
         data = {
             "conversations": [

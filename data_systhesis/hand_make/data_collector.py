@@ -8,7 +8,7 @@ import json
 
 content = []
 for file in os.listdir('save'):
-    with open(f'hand_make/save/{file}', 'r') as f:
+    with open(f'./save/{file}', 'r') as f:
         content.append(json.loads(f.read()))
 
 with open('../data/hand-make-train-data.json', 'w') as f:
