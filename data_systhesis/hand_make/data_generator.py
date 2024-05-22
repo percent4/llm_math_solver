@@ -63,7 +63,7 @@ def first_turn_answer(query):
 
     # find python code and execute the code
     if '```python' in first_reply:
-        messages.append({"role": "assistant", "content": first_reply.split('\n```')[0]})
+        messages.append({"role": "assistant", "content": first_reply.split('```python')[0]})
         python_code_string = re.findall(r'```python\n(.*?)\n```', first_reply, re.S)[0]
         python_file_path = 'temp.py'
         with open(python_file_path, 'w') as f:
@@ -82,7 +82,7 @@ def first_turn_answer(query):
         for chunk in result:
             if hasattr(chunk, "choices") and chunk.choices[0].delta.content:
                 second_reply += chunk.choices[0].delta.content
-        return first_reply.split('\n```')[0], '```python\n' + python_code_string + '\n```', code_reply, second_reply
+        return first_reply.split('```python')[0], '```python\n' + python_code_string + '\n```', code_reply, second_reply
     else:
         return first_reply, '', '', ''
 
