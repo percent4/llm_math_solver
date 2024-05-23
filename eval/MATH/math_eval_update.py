@@ -65,7 +65,6 @@ if __name__ == '__main__':
             print(i, true_answer_str, pred_answer_str, correct_cnt, i + 1, correct_cnt/(i+1))
         except Exception as e:
             print(e)
-            continue
         sample.update({"is_correct": is_correct})
         content.append(sample)
 

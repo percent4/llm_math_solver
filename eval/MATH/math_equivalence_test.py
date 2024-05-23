@@ -110,6 +110,6 @@ class TestIsEquiv(unittest.TestCase):
 		self.assertTrue(is_equiv(test_in, test_out))
 
 	def test_case_1(self):
-		test_in = "-1"
-		test_out = "1"
+		test_in = "4x+5"
+		test_out = "4x + 5"
 		self.assertTrue(is_equiv(test_in, test_out))

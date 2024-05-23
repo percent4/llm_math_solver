@@ -14,19 +14,16 @@ def read_samples():
         data = f.readlines()
 
     content = []
-    i = 1
-    for sample in data:
+    for i, sample in enumerate(data):
         sample_dict = json.loads(sample.strip())
         question, true_answer, pred_answer = sample_dict["problem"], sample_dict["solution"], sample_dict["predict_answer"]
         try:
             true_answer_str = remove_boxed(last_boxed_only_string(true_answer))
             pred_answer_str = remove_boxed(last_boxed_only_string(pred_answer))
-            if not sample_dict["is_correct"]:
-                content.append([i, question, true_answer, pred_answer, true_answer_str, pred_answer_str, 0])
-                i += 1
+            if not sample_dict["is_correct"] and pred_answer_str:
+                content.append([i, true_answer_str, pred_answer_str, 0])
         except Exception as e:
-            content.append([i, question, true_answer, pred_answer, '', '', 0])
-            i += 1
+            # content.append([i, '', '', 0])
             continue
     return content
 
@@ -46,6 +43,15 @@ def get_human_eval(df):
     for i, row in df.iterrows():
         if row['Human Evaluation']:
             human_true_cnt += 1
+    # save human evaluation to json file
+    final_result = [json.loads(line.strip()) for line in data]
+    for i, row in df.iterrows():
+        if row['Human Evaluation']:
+            final_result[row['No.']]["is_correct"] = True
+    with open("math_eval_result_final.json", "w") as g:
+        for _ in final_result:
+            g.write(json.dumps(_, ensure_ascii=False) + '\n')
+
     return (f"Update {human_true_cnt} samples with human evaluation, \n"
             f"Total Accuracy: {model_true_cnt + human_true_cnt}/{len(data)} = {(model_true_cnt + human_true_cnt)/len(data)}")
 
@@ -55,7 +61,7 @@ with gr.Blocks() as demo:
         with gr.Row():
             table = gr.DataFrame(label='Table',
                                  value=read_samples(),
-                                 headers=['No.', 'Question', 'Answer', 'Predict_Answer', 'True_Answer_Number', 'Pred_Answer_Number', 'Human Evaluation'],
+                                 headers=['No.', 'True_Answer_Number', 'Pred_Answer_Number', 'Human Evaluation'],
                                  interactive=True,
                                  wrap=True
                                  )

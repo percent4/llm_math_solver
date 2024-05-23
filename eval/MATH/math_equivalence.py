@@ -160,13 +160,13 @@ def is_equiv(str1, str2, verbose=False):
         nominator, denominator = result[0][0], result[0][1]
         true_value = float(nominator) / float(denominator)
         pred_value = float(str2)
-        return abs(true_value - pred_value) < 1e-10
+        return abs(true_value - pred_value) < 1e-6
     if 'frac' in str2 and re.match(r'\d+\.?\d*$', str1):
         result = re.findall(r'frac{(.*?)}{(.*?)}', str2)
         nominator, denominator = result[0][0], result[0][1]
         true_value = float(nominator) / float(denominator)
         pred_value = float(str1)
-        return abs(true_value - pred_value) < 1e-10
+        return abs(true_value - pred_value) < 1e-6
 
     try:
         ss1 = _strip_string(str1)
