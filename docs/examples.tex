@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{wrapfig}  % 图文混排支持
+\usepackage{caption}
+\usepackage{ctex}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[a4paper,margin=1in]{geometry} % 页面设置
+\usepackage{wallpaper}
+
+\linespread{2} % 设置行距
+
+\title{Examples in LLM SFT for MATH problems}
+\author{Jclian91}
+\date{\today}
+
+\begin{document}
+	
+	\maketitle
+	
+	\clearpage
+	
+	\begin{enumerate}
+		\item 小明有98元，他要买一本书和一支笔，已知书的价格是25元，笔的价格比书的价格多15元，请问小明还剩余多少元钱？\par
+			\includegraphics[width=12cm]{pictures/model_after_1.png}
+		\item 抛物线 $y=x^2 - 4x+3$ 的顶点坐标为多少？\par
+				\includegraphics[width=12cm]{pictures/model_after_2.png}
+		\item 计算123456789与987654321的乘积\par
+				\includegraphics[width=12cm]{pictures/model_after_3.png}
+		\item 若 $(ax-b)(3x+4)=bx^2 + cx+72$，则$a+b+c$的值为多少？\par
+			\includegraphics[width=12cm]{pictures/model_after_4.png}
+		\item 123456789 + 987654321 = ?\par
+			\includegraphics[width=12cm]{pictures/model_after_5.png}
+		\item 已知$\Delta ABC$为正三角形，则 $tan(A+\frac{\pi}{4})$ 的值等于多少？\par
+			\includegraphics[width=12cm]{pictures/model_after_6.png}
+		\item 各项均为正数的等比数列$\{a_{n}\}$的前n项和为$S_{n}$，已知$S_{3}=10$， $S_{6}=30$，则$S_{12}$等于多少？\par
+			\includegraphics[width=12cm]{pictures/model_after_7.png}
+		\item 复数 $3+4i$ 的模是多少？\par
+			\includegraphics[width=12cm]{pictures/model_after_8.png}
+		\item $(1+2x)^6$ 的展开式中 $x^3$ 项的系数为多少？\par
+			\includegraphics[width=12cm]{pictures/model_after_9.png}
+		\item 学校图书馆有故事书、科技书和连环画共1200本，其中故事书占60\%，科技书和连环画的数量比是2:3，图书馆有多少本连环画？\par
+			\includegraphics[width=12cm]{pictures/model_after_10.png}
+		\item 某天，小明去菜市场买了5个苹果和3个梨，花了20元。第二天，他又去同一个菜市场买了3个苹果和4个梨，花了15元。问：小明每个苹果和每个梨的价格是多少元？\par
+			\includegraphics[width=12cm]{pictures/model_after_11.png}
+		\item Suppose you have a system of linear equations: 
+		\begin{equation*}
+			\begin{aligned}
+				2x + 3y + z & = 7 \\
+				x + 2y + 4z & = 12 \\
+				3x + y + 2z & = 8 
+			\end{aligned}
+		\end{equation*}
+		Using matrix methods, find the values of x, y, and z that satisfy the system of equations.\par
+			\includegraphics[width=12cm]{pictures/model_after_12.png}
+		\item $\int_{0}^{\pi^2} \cos(\sqrt{x}) dx $\par
+			\includegraphics[width=12cm]{pictures/model_after_13.png}
+	\end{enumerate}
+
+\end{document}
