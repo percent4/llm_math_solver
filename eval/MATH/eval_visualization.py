@@ -22,9 +22,17 @@ for line in data:
 
 # 绘制类型的饼图
 fig1 = go.Figure(data=go.Pie(labels=list(type_dict.keys()), values=list(type_dict.values())))
+fig1.update_layout(
+    title="Type Distribution of Correct Answers in MATH",
+    font=dict(size=20)
+)
 # fig1.show()
 # 绘制Level的饼图
 fig2 = go.Figure(data=go.Pie(labels=list(level_dict.keys()), values=list(level_dict.values())))
+fig2.update_layout(
+    title="Level Distribution of Correct Answers in MATH",
+    font=dict(size=20)
+)
 # fig2.show()
 
 # 获取每个类型的正确率
@@ -40,8 +48,8 @@ for line in data:
 
 type_correct_ratio = {key: type_cnt_dict[f'{key}_correct']/type_cnt_dict[f'{key}_total'] for key in type_dict.keys()}
 level_correct_ratio = {key: level_cnt_dict[f'{key}_correct']/level_cnt_dict[f'{key}_total'] for key in level_dict.keys()}
-sorted_type_correct_ratio = {k: v for k, v in sorted(type_correct_ratio.items(), key=itemgetter(1), reverse=True)}
-sorted_level_correct_ratio = {k: v for k, v in sorted(level_correct_ratio.items(), key=itemgetter(1), reverse=True)}
+sorted_type_correct_ratio = {k: round(v, 4) for k, v in sorted(type_correct_ratio.items(), key=itemgetter(1), reverse=True)}
+sorted_level_correct_ratio = {k: round(v, 4) for k, v in sorted(level_correct_ratio.items(), key=itemgetter(1), reverse=True)}
 
 # 绘制类型的柱状图
 colors = ['red', 'blue', 'green', 'purple', 'orange', 'pink', 'brown']
@@ -60,7 +68,7 @@ fig3.update_layout(
     legend_title="Type",
     font=dict(size=20)
 )
-fig3.show()
+# fig3.show()
 # 绘制Level的柱状图
 fig4 = go.Figure(data=[go.Bar(x=list(sorted_level_correct_ratio.keys()),
                               y=list(sorted_level_correct_ratio.values()),
@@ -76,4 +84,4 @@ fig4.update_layout(
     legend_title="Level",
     font=dict(size=20)
 )
-# fig4.show()
+fig4.show()
