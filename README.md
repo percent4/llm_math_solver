@@ -1,3 +1,15 @@
+<div align="center">
+  <h1>Welcome to LLM Math Solver</h1>
+
+<h4 align="center">
+  <a href="https://percent4.github.io/llm_math_solver/"><img src="https://img.shields.io/badge/📄-docs-000000?style=for-the-badge&colorA=09c&colorB=555" height='35px' alt="Docs"></a>
+</h4>
+  <p>LLM Math Solver: using LLM to solve MATH problems.
+</p>
+<h1></h1>
+</div>
+
+
 本项目用于大模型数学解题能力方面的数据集合成，主要包括以下几个部分：
 
 ### 数据集
