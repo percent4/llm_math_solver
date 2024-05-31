@@ -3,6 +3,8 @@
 # @file: math_eval_update.py
 # @time: 2024/5/21 14:00
 # 对模型评估后的结果加入是否正确的标记
+"""`eval/MATH/math_eval_update.py`: update the evaluation result with correctness for MATH dataset.
+"""
 import json
 
 from math_equivalence import is_equiv

@@ -2,6 +2,8 @@
 # @place: Pudong, Shanghai
 # @file: human_eval_server.py
 # @time: 2024/5/15 14:35
+"""`eval/gsm8k/human_eval_server.py`: human check script for GSM8K dataset using Gradio.
+"""
 import json
 import gradio as gr
 

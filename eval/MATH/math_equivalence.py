@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
+
 # @place: Pudong, Shanghai
 # @file: math_equivalence.py
 # @time: 2024/5/20 16:08
+"""`eval/MATH/math_equivalence.py`: check whether two answer are equal in math
+"""
+
 import re
 def _fix_fracs(string):
     substrs = string.split("\\frac")

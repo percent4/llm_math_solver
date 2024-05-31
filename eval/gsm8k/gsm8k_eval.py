@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+"""`eval/gsm8k/gsm8k_eval.py`: evaluation script for GSM8K dataset
+"""
 import os
 import re
 import json
@@ -8,7 +11,7 @@ import logging
 from retry import retry
 from random import choices
 
-logging.basicConfig(level = logging.INFO, format='%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
 
 os.environ["OPENAI_BASE_URL"] = "http://localhost:8000/v1"
@@ -20,6 +23,7 @@ execution_desc = ["运行以上代码，输出会是： ",
                   "执行上述Python代码，运行结果将是：",
                   "上面的Python代码执行结果为：",
                   "运行上述代码，我们可以得到题目要求的答案。输出结果将是："]
+
 
 @retry(exceptions=Exception, tries=3, delay=2)
 def question_answer(query):
@@ -63,6 +67,7 @@ def question_answer(query):
         return final_reply
     else:
         return reply_message
+
 
 with open('gsm8k_test.jsonl', 'r') as f:
     content = f.readlines()

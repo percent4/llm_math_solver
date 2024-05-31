@@ -1,3 +1,6 @@
+"""`eval/MATH/math_equivalence_test.py`: unittest for math equivalence.
+"""
+
 from .math_equivalence import is_equiv
 import unittest
 

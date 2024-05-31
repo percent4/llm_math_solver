@@ -3,6 +3,8 @@
 # @file: human_eval_server.py
 # @time: 2024/5/21 11:16
 # 对模型评估后的结果进行人工评估，使用gradio实现
+"""`eval/MATH/human_eval_server.py`: human check script for MATH dataset using Gradio.
+"""
 import json
 import gradio as gr
 

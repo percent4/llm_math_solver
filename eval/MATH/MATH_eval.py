@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+"""`eval/MATH/MATH_eval.py`: evaluation script for MATH dataset
+"""
 import os
 import re
 import json
