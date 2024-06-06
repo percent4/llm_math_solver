@@ -9,14 +9,14 @@ import gradio as gr
 
 
 def read_samples():
-    with open("eval_result_yi_15_34b.json", "r") as f:
+    with open("eval_result_yi_15_34b_chat.json", "r") as f:
         data = f.readlines()
 
     content = []
     cnt = 0
     for sample in data:
         sample_dict = json.loads(sample.strip())
-        if '\\boxed' not in sample_dict['pred_answer']:
+        if not sample_dict['is_correct']:
             cnt += 1
             content.append([cnt, sample_dict['question'],
                             sample_dict['answer'].split('####')[-1].strip(),
@@ -27,14 +27,15 @@ def read_samples():
 
 def get_human_eval(df):
     # get model evaluation
-    with open("eval_result_yi_15_34b.json", "r") as f:
+    with open("eval_result_yi_15_34b_chat.json", "r") as f:
         data = f.readlines()
 
     model_true_cnt = 0
     for sample in data:
         sample_dict = json.loads(sample.strip())
-        if '\\boxed' in sample_dict['pred_answer'] and sample_dict['is_correct']:
+        if sample_dict['is_correct']:
             model_true_cnt += 1
+
     # get human evaluation
     human_true_cnt = 0
     for i, row in df.iterrows():

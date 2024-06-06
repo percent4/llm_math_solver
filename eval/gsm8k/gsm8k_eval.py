@@ -31,7 +31,7 @@ def question_answer(query):
     messages.append({"role": "user", "content": f"题目：{query}"})
     result = client.chat.completions.create(messages=messages,
                                             model="Yi-1.5-34B-Chat-math",
-                                            temperature=0.0,
+                                            temperature=0.2,
                                             stream=True)
     reply_message = ""
     for chunk in result:
@@ -45,7 +45,7 @@ def question_answer(query):
         python_file_path = 'temp.py'
         with open(python_file_path, 'w') as f:
             f.write(python_code_string)
-        python_code_run = subprocess.run(['python3', python_file_path], stdout=subprocess.PIPE)
+        python_code_run = subprocess.run(['python3', python_file_path], stdout=subprocess.PIPE, timeout=10)
         if python_code_run.returncode:
             raise RuntimeError("生成的Python代码无法运行！")
         python_code_execution = python_code_run.stdout.decode('utf-8')
@@ -56,7 +56,7 @@ def question_answer(query):
         messages.append({"role": "user", "content": code_reply})
         result = client.chat.completions.create(messages=messages,
                                                 model="Yi-1.5-34B-Chat-math",
-                                                temperature=0.0,
+                                                temperature=0.2,
                                                 stream=True)
         
         final_reply = ""
