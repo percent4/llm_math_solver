@@ -24,6 +24,7 @@ execution_desc = ["运行以上代码，输出会是： ",
                   "上面的Python代码执行结果为：",
                   "运行上述代码，我们可以得到题目要求的答案。输出结果将是："]
 
+
 @retry(exceptions=Exception, tries=3, delay=2)
 def question_answer(query):
     messages = [{"role": "system", "content": "你是一个数学解题大师，请解决下面的数学题，给出思考过程，必要时需要给出解题过程中的Python代码。正确答案的数值用\\boxed{}包围起来，最终的答案以因此开头，不要讲多余的废话。"}]
@@ -67,8 +68,10 @@ def question_answer(query):
     else:
         return reply_message
 
+
 with open('math_test.jsonl', 'r') as f:
     content = f.readlines()
+
 
 samples = []
 i = 1
