@@ -2451,26 +2451,6 @@
         "conversations": [
             {
                 "from": "human",
-                "value": "题目：The Kwik-e-Tax Center charges $50 for a federal return, $30 for a state return, and $80 for quarterly business taxes. If they sell 60 federal returns, 20 state returns, and 10 quarterly returns in one day, what was their total revenue for the day?"
-            },
-            {
-                "from": "gpt",
-                "value": "首先，我们需要计算每种服务的收入，然后将它们加在一起得到总收入。\n\n### 解题步骤：\n\n1. **计算每种服务的收入**：\n   - 联邦报税的收入：$50 \\times 60$\n   - 州报税的收入：$30 \\times 20$\n   - 季度商业税的收入：$80 \\times 10$\n\n2. **计算总收入**：\n   - 总收入 = 联邦报税的收入 + 州报税的收入 + 季度商业税的收入\n\n我们可以使用Python代码来计算这些值：\n```python\n# 定义每种服务的价格\nfederal_price = 50\nstate_price = 30\nquarterly_price = 80\n\n# 定义每种服务的数量\nfederal_count = 60\nstate_count = 20\nquarterly_count = 10\n\n# 计算每种服务的收入\nfederal_revenue = federal_price * federal_count\nstate_revenue = state_price * state_count\nquarterly_revenue = quarterly_price * quarterly_count\n\n# 计算总收入\ntotal_revenue = federal_revenue + state_revenue + quarterly_revenue\n\n# 输出结果\ntotal_revenue\n```"
-            },
-            {
-                "from": "human",
-                "value": "\n运行以上代码，输出会是： ``````\n"
-            },
-            {
-                "from": "gpt",
-                "value": "因此，他们当天的总收入为 \\(\\boxed{4400}\\) 美元。"
-            }
-        ]
-    },
-    {
-        "conversations": [
-            {
-                "from": "human",
                 "value": "题目：Jimmy is going to sell pizzas at the carnival to make some money. The carnival only gave him 7 hours to do so. He bought a 22kg sack of flour to make his pizzas and he takes 10 min to make each pizza for the customers. At the end of the 7 hours, he saw some flour was left. Knowing that each pizza needs 0.5kg of flour to make, how many pizzas can he make to bring home with the flour left?"
             },
             {
@@ -3552,26 +3532,6 @@
             {
                 "from": "gpt",
                 "value": "因此，现在在展示缸中的小丑鱼数量是 \\(\\boxed{16}\\)。"
-            }
-        ]
-    },
-    {
-        "conversations": [
-            {
-                "from": "human",
-                "value": "题目：Frank has 7 one-dollar bills, 4 five-dollar bills, 2 ten-dollar bills, and 1 twenty-dollar bill. He goes to buy peanuts, which cost $3 a pound. He buys what he wants and has $4 in change. He plans to eat the peanuts all in one week. How many pounds does he eat on average per day?"
-            },
-            {
-                "from": "gpt",
-                "value": "首先给出思考过程：我们需要确定Frank购买了多少磅的花生，然后计算他每天平均吃多少磅。我们知道他购买花生后剩下4美元找零。我们可以通过以下步骤解决这个问题：\n\n1. 计算Frank购买花生前的总金额。\n2. 计算Frank购买花生后的总金额。\n3. 计算他购买花生的总花费。\n4. 计算他购买的花生的总磅数。\n5. 计算他每天平均吃多少磅花生。\n\n### 解题步骤：\n\n1. **计算Frank购买花生前的总金额**：\n   - 7张一美元钞票：\\(7 \\times 1 = 7\\) 美元\n   - 4张五美元钞票：\\(4 \\times 5 = 20\\) 美元\n   - 2张十美元钞票：\\(2 \\times 10 = 20\\) 美元\n   - 1张二十美元钞票：\\(1 \\times 20 = 20\\) 美元\n   - 总金额：\\(7 + 20 + 20 + 20 = 67\\) 美元\n\n2. **计算Frank购买花生后的总金额**：\n   - 他有4美元找零，所以购买花生后的总金额是4美元。\n\n3. **计算他购买花生的总花费**：\n   - 总花费：\\(67 - 4 = 63\\) 美元\n\n4. **计算他购买的花生的总磅数**：\n   - 每磅花生3美元，所以他购买的总磅数是：\\( \\frac{63}{3} = 21 \\) 磅\n\n5. **计算他每天平均吃多少磅花生**：\n   - 他计划在一周内吃完这些花生，所以每天平均吃的磅数是：\\( \\frac{21}{7} = 3 \\) 磅\n\n### Python代码验证：```python\n# 计算Frank购买花生前的总金额\ntotal_money = 7 * 1 + 4 * 5 + 2 * 10 + 1 * 20\n\n# 计算他购买花生后的总金额\nremaining_money = 4\n\n# 计算他购买花生的总花费\ntotal_spent = total_money - remaining_money\n\n# 计算他购买的花生的总磅数\nprice_per_pound = 3\ntotal_pounds = total_spent / price_per_pound\n\n# 计算他每天平均吃多少磅花生\ndays = 7\naverage_per_day = total_pounds / days\n\naverage_per_day\n```"
-            },
-            {
-                "from": "human",
-                "value": "\n运行以上代码，输出会是： ``````\n"
-            },
-            {
-                "from": "gpt",
-                "value": "因此，Frank每天平均吃花生的磅数为 \\(\\boxed{3.0}\\)。"
             }
         ]
     },
@@ -7872,26 +7832,6 @@
             {
                 "from": "gpt",
                 "value": "根据您提供的Python代码执行结果，可以得出结论：\n\nSimon购买花卉后，他将会收到 \\(\\boxed{23.00}\\) 美元的找零。"
-            }
-        ]
-    },
-    {
-        "conversations": [
-            {
-                "from": "human",
-                "value": "题目：Martha is making centerpieces for her Thanksgiving dinner. There are six centerpieces, and each centerpiece uses 8 roses, twice as many orchids as roses, and a certain number of lilies. If Martha wants to spend $2700 total, and each flower costs $15, how many lilies will she put in each centerpiece?"
-            },
-            {
-                "from": "gpt",
-                "value": "### 解题思路：\n\n1. **理解题目要求**：\n   - Martha制作6个中心装饰，每个装饰需要8朵玫瑰、玫瑰数量的两倍的兰花以及一定数量的百合。\n   - 每朵花的成本是$15，总预算是$2700。\n\n2. **计算每个中心装饰所需的花的数量**：\n   - 每个装饰需要8朵玫瑰。\n   - 每个装饰需要 \\(2 \\times 8 = 16\\) 朵兰花。\n\n3. **设每个装饰需要 \\(x\\) 朵百合**。\n\n4. **计算每个中心装饰的总花数**：\n   - 每个装饰的总花数为 \\(8 + 16 + x = 24 + x\\)。\n\n5. **计算6个中心装饰的总花数**：\n   - 总花数为 \\(6 \\times (24 + x) = 144 + 6x\\)。\n\n6. **计算总成本**：\n   - 每朵花的成本是$15，总成本为 \\(15 \\times (144 + 6x)\\)。\n\n7. **设总成本等于$2700，解方程找出 \\(x\\)**：\n   - \\(15 \\times (144 + 6x) = 2700\\)。\n\n### 计算过程：\n\n1. **设方程**：\n   \\[\n   15 \\times (144 + 6x) = 2700\n   \\]\n\n2. **解方程**：\n   \\[\n   144 + 6x = \\frac{2700}{15}\n   \\]\n   \\[\n   144 + 6x = 180\n   \\]\n   \\[\n   6x = 180 - 144\n   \\]\n   \\[\n   6x = 36\n   \\]\n   \\[\n   x = \\frac{36}{6}\n   \\]\n   \\[\n   x = 6\n   \\]\n\n我们可以使用Python代码来验证这个计算过程：```python\n# 定义变量\ntotal_cost = 2700\ncost_per_flower = 15\nroses_per_centerpiece = 8\norchids_per_centerpiece = 2 * roses_per_centerpiece\ntotal_centerpieces = 6\n\n# 设方程\ntotal_flowers_per_centerpiece = 24  # 8 roses + 16 orchids\nx = sp.symbols('x')\nequation = total_cost - cost_per_flower * (total_centerpieces * (total_flowers_per_centerpiece + x))\n\n# 解方程\nsolution = sp.solve(equation, x)\nprint('每个中心装饰需要的百合数量为:', solution)\n```"
-            },
-            {
-                "from": "human",
-                "value": "\n上面的Python代码执行结果为：``````\n"
-            },
-            {
-                "from": "gpt",
-                "value": "因此，每个中心装饰需要的百合数量为：\\(\\boxed{6}\\)。"
             }
         ]
     },
