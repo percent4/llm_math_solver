@@ -9,7 +9,7 @@ import gradio as gr
 
 
 def read_samples():
-    with open("eval_result_yi_15_34b_chat.json", "r") as f:
+    with open("eval_result_qwen2_72b_instruct.json", "r") as f:
         data = f.readlines()
 
     content = []
@@ -27,7 +27,7 @@ def read_samples():
 
 def get_human_eval(df):
     # get model evaluation
-    with open("eval_result_yi_15_34b_chat.json", "r") as f:
+    with open("eval_result_qwen2_72b_instruct.json", "r") as f:
         data = f.readlines()
 
     model_true_cnt = 0

@@ -8,8 +8,9 @@ import json
 
 content = []
 for file in os.listdir('./save'):
-    with open(f'./save/{file}', 'r') as f:
-        content.append(json.loads(f.read()))
+    if file.endswith('.json'):
+        with open(f'./save/{file}', 'r') as f:
+            content.append(json.loads(f.read()))
 
 with open('../data/tal_scq5k_train_data.json', 'w') as f:
     f.write(json.dumps(content, ensure_ascii=False, indent=4))
