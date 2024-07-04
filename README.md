@@ -9,6 +9,7 @@
 <h1></h1>
 </div>
 
+> 最新的微调模型`QWen-2-72B-Instruct-math`已在Huggingface上发布，可以下载使用，[点击这里](https://huggingface.co/jclian91/Qwen2-72B-Instruct-math)。
 
 本项目用于大模型数学解题能力方面的数据集合成，主要包括以下几个部分：
 
@@ -90,4 +91,3 @@
 2. [NLP（九十九）大模型的数学能力微调及测评](https://mp.weixin.qq.com/s?__biz=MzU2NTYyMDk5MQ==&mid=2247486889&idx=1&sn=27c1a40d3af462f43a80a1ed401843f6&chksm=fcb9b439cbce3d2fd73e753618e0b32027314648eb13dc8b48bb9e713ad5313777c1ef27ce46&token=390124673&lang=zh_CN#rd)
 3. [NLP（一百）大模型数学能力测评](https://mp.weixin.qq.com/s?__biz=MzU2NTYyMDk5MQ==&mid=2247486909&idx=1&sn=31b01bd4155b2c9ca15e2a7ae9f4de15&chksm=fcb9b42dcbce3d3bb473cf138f0f0f9a71addeff934900d155b6b90fb2a5857c1926b8aa0e9d&token=584142844&lang=zh_CN#rd)
 4. [Open WebUI的Pipelines学习之使用大模型解数学题](https://mp.weixin.qq.com/s?__biz=MzU2NTYyMDk5MQ==&mid=2247487013&idx=1&sn=6a6786ba8c8c7cfdbc02ef558adefe71&chksm=fcb9b7b5cbce3ea37f8fb61e743d0ea0a7d4f5d6b8e8b2c7a80171a5c8c217524d8f307c0146&token=120899150&lang=zh_CN#rd)
-5. 
