@@ -4,11 +4,8 @@
 # @time: 2024/7/1 15:35
 import os
 import re
-import json
-import requests
 import subprocess
 from typing import List, Union, Generator, Iterator
-from schemas import OpenAIChatMessage
 from pydantic import BaseModel
 from openai import OpenAI
 from random import choices
