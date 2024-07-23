@@ -19,12 +19,16 @@ with open("gsm8k_train_data.json", "r", encoding="utf-8") as f:
 with open("tal_scq5k_train_data.json", "r", encoding="utf-8") as f:
     tal_scq5k_train_data = json.load(f)
 
+with open("numina_train_data.json", "r", encoding="utf-8") as f:
+    numina_train_data = json.load(f)
+
 content = []
 content.extend(hand_make_train_data)
 content.extend(math_train_data)
 content.extend(ape210k_train_data)
 content.extend(gsm8k_train_data)
 content.extend(tal_scq5k_train_data)
+content.extend(numina_train_data)
 new_content = []
 for item in content:
     conversations = item["conversations"]
@@ -39,4 +43,5 @@ print("共有{}条GPT-4生成数据".format(len(math_train_data)))
 print("共有{}条APE210K数据".format(len(ape210k_train_data)))
 print("共有{}条GSM8K数据".format(len(gsm8k_train_data)))
 print("共有{}条TAL-SCQ5K数据".format(len(tal_scq5k_train_data)))
+print("共有{}条NUMINA数据".format(len(numina_train_data)))
 print("共有{}条数据".format(len(new_content)))
