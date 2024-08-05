@@ -75,7 +75,7 @@ def first_turn_answer(query):
         code_reply = f"\n{code_reply_str}```{python_code_execution.strip()}```\n"
         messages.append({"role": "user", "content": code_reply})
         result = client.chat.completions.create(messages=messages,
-                                                model="gpt-3.5-turbo",
+                                                model="gpt-4o-mini",
                                                 temperature=0.1,
                                                 stream=True)
         second_reply = ""

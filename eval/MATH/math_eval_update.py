@@ -49,7 +49,7 @@ def remove_boxed(s):
 
 
 if __name__ == '__main__':
-    with open("math_eval_result_qwen2_72b_instruct.json", "r", encoding="utf-8") as f:
+    with open("math_eval_result_qwen2_72b_math_v2.json", "r", encoding="utf-8") as f:
         data = f.readlines()
 
     correct_cnt = 0
