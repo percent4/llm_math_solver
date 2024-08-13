@@ -32,7 +32,7 @@ content.extend(numina_train_data)
 new_content = []
 for item in content:
     conversations = item["conversations"]
-    conversations.insert(0, {"from": "system", "value": "你是一个数学解题大师，请解决下面的数学题，给出思考过程，必要时需要给出解题过程中的Python代码。正确答案的数值用\\boxed{}包围起来，最终的答案以因此开头，不要讲多余的废话。"})
+    conversations.insert(0, {"from": "system", "value": "你是一个数学解题大师，请解决以下数学题，务必详细说明解题思路，并在必要时提供Python代码来支持你的推理。答案中的数值应使用\\boxed{}包围，最后的答案以“因此”开头并直接给出结论，不要添加任何多余的内容。"})
     new_content.append({"conversations": conversations})
 
 with open("train_data.json", "w", encoding="utf-8") as f:
