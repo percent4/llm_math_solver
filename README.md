@@ -15,14 +15,12 @@
 
 ### 数据集
 
-- 数据合成: data_synthesis/data_generation.py
-- 数据校验: data_synthesis/data_validator.py
-- 数据格式转换: data_synthesis/make_train_data.py
-- Web服务人工数据录入: data_synthesis/math_gen_server.py
-- 人工数据整理：data_synthesis/hand-make-train-data.py
+- 数据大规模自动合成: data_systhesis/ape210k/data_generator.py, data_systhesis/gsm8k_train/data_generator.py, data_systhesis/numina-math-tir/data_generator.py, data_systhesis/tal_scq5k/data_generator.py
+- 大模型合成数据: data_systhesis/llm/data_generator.py
+- Web服务人工数据录入: data_systhesis/hand_make/data_generator.py
 - 数据合并：data_synthesis/data_merge.py
 
-生成的样例数据如下：
+生成的样例数据（一个样本数据）如下：
 
 ```json
 [
@@ -45,8 +43,7 @@
                 "value": "因此，小明购买2.5公斤苹果，总共需要支付7.5元。"
             }
         ]
-    },
-    ...
+    }
 ]
 ```
 
@@ -71,8 +68,7 @@
 - [ ] 多次思考过程，类似于COT，现在的方案只有一次思考，生成一次代码
 - [x] 可靠性：生成的Python代码更可靠，现在生成的Python代码存在多种问题，如运行报错，无法执行，进入死循环等等, 解决方法：使用`subprocess`库运行代码
 - [x] 准确性：Python代码运行后的数字精度问题，是否可以用分数或根式等其它形式表达，现在的执行结果有时候返回小数，与正确答案存在精度偏差，其实返回分数或根式更为合理, 解决方法：构建数据集时返回分数或根式
-- [ ] 稳定性：大模型的生成文本或代码不稳定，变动较大，导致答案有时正确，有时不正确
-- [ ] ...
+- [x] 稳定性：大模型的生成文本或代码不稳定，变动较大，导致答案有时正确，有时不正确
 
 ### 数学能力测评
 
@@ -91,3 +87,4 @@
 2. [NLP（九十九）大模型的数学能力微调及测评](https://mp.weixin.qq.com/s?__biz=MzU2NTYyMDk5MQ==&mid=2247486889&idx=1&sn=27c1a40d3af462f43a80a1ed401843f6&chksm=fcb9b439cbce3d2fd73e753618e0b32027314648eb13dc8b48bb9e713ad5313777c1ef27ce46&token=390124673&lang=zh_CN#rd)
 3. [NLP（一百）大模型数学能力测评](https://mp.weixin.qq.com/s?__biz=MzU2NTYyMDk5MQ==&mid=2247486909&idx=1&sn=31b01bd4155b2c9ca15e2a7ae9f4de15&chksm=fcb9b42dcbce3d3bb473cf138f0f0f9a71addeff934900d155b6b90fb2a5857c1926b8aa0e9d&token=584142844&lang=zh_CN#rd)
 4. [Open WebUI的Pipelines学习之使用大模型解数学题](https://mp.weixin.qq.com/s?__biz=MzU2NTYyMDk5MQ==&mid=2247487013&idx=1&sn=6a6786ba8c8c7cfdbc02ef558adefe71&chksm=fcb9b7b5cbce3ea37f8fb61e743d0ea0a7d4f5d6b8e8b2c7a80171a5c8c217524d8f307c0146&token=120899150&lang=zh_CN#rd)
+5. [笔记：大模型数学解题能力](https://mp.weixin.qq.com/s?__biz=MzU2NTYyMDk5MQ==&mid=2247487038&idx=1&sn=ae458cbb6d9f23fb04229bd18961449d&chksm=fcb9b7aecbce3eb800f9b80de1c2931660b7ce1ea103f44759ed179638bad5711d357757f568&token=1938218370&lang=zh_CN#rd)
