@@ -146,4 +146,4 @@ with gr.Blocks() as demo:
                inputs=[user_input, tought, code, code_result, output],
                outputs=[user_input, tought, code, code_result, output])
 
-demo.launch(server_name="0.0.0.0", server_port=16000, share=True)
+demo.launch(server_name="0.0.0.0", server_port=18000, share=True)
