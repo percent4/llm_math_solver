@@ -21,6 +21,7 @@ def read_samples():
         if not sample_dict['is_correct']:
             cnt += 1
             content.append([cnt, sample_dict['question'],
+                            sample_dict['answer'],
                             sample_dict['answer'].split('####')[-1].strip(),
                             sample_dict['pred_answer'],
                             0])
@@ -52,7 +53,7 @@ with gr.Blocks() as demo:
         with gr.Row():
             table = gr.DataFrame(label='Table',
                                  value=read_samples(),
-                                 headers=['No.', 'Question', 'Answer', 'Prediction', 'Human Evaluation'],
+                                 headers=['No.', 'Question', 'Answer', 'Answer_number', 'Prediction', 'Human Evaluation'],
                                  interactive=True,
                                  wrap=True)
         with gr.Row():
