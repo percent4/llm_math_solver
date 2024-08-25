@@ -25,7 +25,7 @@
 | Yi-1.5-34B          | 83.47% | 52.76% | 3480 |
 | Yi-1.5-34B-Chat     | 85.67% | 57.22% | 3479 |
 | QWen-2-72B-Instruct | 93.03% | 68.54% | 3469 |
-| QWen-2-72B-Instruct | 93.56% | 69.99% | 4799 |
+| QWen-2-72B-Instruct | 93.56% | 69.66% | 4799 |
 
 其它模型的数学能力测评：[LLM Leaderboard](https://www.vellum.ai/llm-leaderboard)
 
