@@ -2,6 +2,11 @@
 
 欢迎来到`LLM Math Solver`项目，本项目旨在使用大模型来解决数学习题.
 
+> 最新的微调模型`QWen-2-72B-Instruct-math-v2`的[Demo体验网址](http://117.50.185.39:50081/)
+
+> 最新的微调模型`QWen-2-72B-Instruct-math`已在Huggingface上发布，可以下载使用，[点击这里](https://huggingface.co/jclian91/Qwen2-72B-Instruct-math)。
+
+
 # Content
 
 - [demo](demo.pdf)
@@ -20,6 +25,7 @@
 | Yi-1.5-34B          | 83.47% | 52.76% | 3480 |
 | Yi-1.5-34B-Chat     | 85.67% | 57.22% | 3479 |
 | QWen-2-72B-Instruct | 93.03% | 68.54% | 3469 |
+| QWen-2-72B-Instruct | 93.56% | 69.99% | 4799 |
 
 其它模型的数学能力测评：[LLM Leaderboard](https://www.vellum.ai/llm-leaderboard)
 
