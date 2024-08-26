@@ -82,6 +82,11 @@
 | QWen-2-72B-Instruct | 93.03% | 68.54% | 3469 |
 | QWen-2-72B-Instruct | 93.56% | 69.66% | 4799 |
 
+### 评测数据集存在问题
+
+1. GSMK8K的测试数据集部分问题出错，笔者发现4条样本，参见后续的`文章与思考`中的文章6.
+2. MATH的测试集中，部分样本存在两个或多个答案，行号为79, 4976, 4696, 4686, 4459, 4229, 4015, 3962, 3928, 3098。
+
 ### 文章与思考
 
 本项目将会形成一系列的文章与思考，欢迎关注与讨论。
@@ -91,3 +96,4 @@
 3. [NLP（一百）大模型数学能力测评](https://mp.weixin.qq.com/s?__biz=MzU2NTYyMDk5MQ==&mid=2247486909&idx=1&sn=31b01bd4155b2c9ca15e2a7ae9f4de15&chksm=fcb9b42dcbce3d3bb473cf138f0f0f9a71addeff934900d155b6b90fb2a5857c1926b8aa0e9d&token=584142844&lang=zh_CN#rd)
 4. [Open WebUI的Pipelines学习之使用大模型解数学题](https://mp.weixin.qq.com/s?__biz=MzU2NTYyMDk5MQ==&mid=2247487013&idx=1&sn=6a6786ba8c8c7cfdbc02ef558adefe71&chksm=fcb9b7b5cbce3ea37f8fb61e743d0ea0a7d4f5d6b8e8b2c7a80171a5c8c217524d8f307c0146&token=120899150&lang=zh_CN#rd)
 5. [笔记：大模型数学解题能力](https://mp.weixin.qq.com/s?__biz=MzU2NTYyMDk5MQ==&mid=2247487038&idx=1&sn=ae458cbb6d9f23fb04229bd18961449d&chksm=fcb9b7aecbce3eb800f9b80de1c2931660b7ce1ea103f44759ed179638bad5711d357757f568&token=1938218370&lang=zh_CN#rd)
+6. [NLP（一百零六）GSM8K测试集中答案错误的4道题目](https://mp.weixin.qq.com/s?__biz=MzU2NTYyMDk5MQ==&mid=2247487146&idx=1&sn=6a6fc931b76b2db3414c3208e26fe5a8&chksm=fcb9b73acbce3e2cb48fd2348d8e2225b620b93e229ecf17ac26e0982b03b7097bee529a51d4&token=552536245&lang=zh_CN#rd)
