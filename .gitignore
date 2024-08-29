@@ -4,3 +4,4 @@ __pycache__
 data_systhesis/*/.env
 data_systhesis/*/save
 eval/*/flagged
+eval/gaokao/.env

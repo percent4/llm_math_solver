@@ -1,0 +1,78 @@
+[
+  {
+    "question": "1. 已知 $\\mathrm{z}=-1-\\mathrm{i}$ ，则 $|\\mathrm{z}|=$ （）\nA. 0\nB. 1\nC. $\\sqrt{2}$\nD. 2",
+    "answer": "C"
+  },
+  {
+    "question": "2. 已知命题 $p: \\forall \\mathrm{x} \\in \\mathbf{R},|\\mathrm{x}+1|>1$; 命题 $q: \\exists \\mathrm{x}>0, \\mathrm{x}^{3}=\\mathrm{x}$, 则 ( )\nA. $p$ 和 $q$ 都是真命题\nB. $\\neg \\mathrm{p}$ 和 $q$ 都是真命题\nC. $p$ 和 $\\neg \\mathrm{q}$ 都是真命题\nD. $\\neg \\mathrm{p}$ 和 $\\neg \\mathrm{q}$ 都是真命题",
+    "answer": "B"
+  },
+  {
+    "question": "3. 已知向量 $\\vec{a}, \\vec{b}$ 满足 $|\\vec{a}|=1,|\\vec{a}+2 \\vec{b}|=2$, 且 $(\\vec{b}-2 \\vec{a}) \\perp \\vec{b}$, 则 $|\\vec{b}|=$ （）\nA. $\\frac{1}{2}$\nB. $\\frac{\\sqrt{2}}{2}$\nC. $\\frac{\\sqrt{3}}{2}$\nD. 1",
+    "answer": "B"
+  },
+  {
+    "question": "4. 某农业研究部门在面积相等的 100 块稻田上种植一种新型水稻, 得到各块稻田的亩产量（单位：kg）并部分整理下表\n\n| 亩产量 | $[900$,$950)$ | $[950$, $1000)$ | $[1000$, $1050)$ | $[1050$, $1100)$ | $[1100$, $1150)$ | $[1150$, $1200)$ |\n| :---: | :---: | :---: | :---: | :---: |:---: | :---: |\n| 频数 | 6 | 12 | 18 |30| 24 | 10 |\n\n据表中数据, 结论中正确的是 ( )\nA. 100 块稻田亩产量的中位数小于 1050 kg\nB. 100 块稻田中亩产量低于 1100 kg 的稻田所占比例超过 $80 \\%$\nC. 100 块稻田亩产量的极差介于 200 kg 至 300 kg 之间\nD. 100 块稻田亩产量的平均值介于 900 kg 至 1000 kg 之间",
+    "answer": "C"
+  },
+  {
+    "question": "5. 已知曲线 $C: \\mathrm{x}^{2}+\\mathrm{y}^{2}=16(\\mathrm{y}>0)$ ，从 $C$ 上任意一点 $P$ 向 $x$ 轴作垂线段 $\\mathrm{PP}^{\\prime}, \\mathrm{P}^{\\prime}$ 为垂足, 则线段 $\\mathrm{PP}^{\\prime}$\n的中点 $M$ 的轨迹方程为 $(\\quad)$\nA. $\\frac{x^{2}}{16}+\\frac{y^{2}}{4}=1 \\quad(y>0)$\nB. $\\frac{x^{2}}{16}+\\frac{y^{2}}{8}=1(y>0)$\nc. $\\frac{y^{2}}{16}+\\frac{x^{2}}{4}=1(y>0)$\nD. $\\frac{y^{2}}{16}+\\frac{x^{2}}{8}=1 \\quad(\\mathrm{y}>0)$",
+    "answer": "A"
+  },
+  {
+    "question": "6. 设函数 $f(x)=a(x+1)^{2}-1, g(x)=\\cos x+2 a x$ ，当 $x \\in(-1,1)$ 时，曲线 $y=f(x)$ 与 $y=g(x)$ 恰有一个交点, 则 $\\mathrm{a}=$\nA. -1\nB. $\\frac{1}{2}$\nC. 1\nD. 2",
+    "answer": "D"
+  },
+  {
+    "question": "7. 已知正三棱台 $\\mathrm{ABC}-\\mathrm{A}_{1} \\mathrm{~B}_{1} \\mathrm{C}_{1}$ 的体积为 $\\frac{52}{3}, \\mathrm{AB}=6, \\mathrm{~A}_{1} \\mathrm{~B}_{1}=2$, 则 $\\mathrm{A}_{1} \\mathrm{~A}$ 与平面 $A B C$ 所成角的正切值为\nA. $\\frac{1}{2}$\nB. 1\nC. 2\nD. 3",
+    "answer": "B"
+  },
+  {
+    "question": "8. 设函数 $f(x)=(x+a) \\ln (x+b)$, 若 $f(x) \\geq 0$, 则 $a^{2}+b^{2}$ 的最小值为 $(\\quad)$\nA. $\\frac{1}{8}$\nB. $\\frac{1}{4}$\nC. $\\frac{1}{2}$\nD. 1",
+    "answer": "C"
+  },
+  {
+    "question": "9. 对于函数 $f(x)=\\sin 2 x$ 和 $g(x)=\\sin \\left(2 x-\\frac{\\pi}{4}\\right)$ ，下列正确的有（（\nA. $f(x)$ 与 $g(x)$ 有相同零点\nB. $f(x)$ 与 $g(x)$ 有相同最大值\nC. $f(x)$ 与 $g(x)$ 有相同的最小正周期\nD. $f(x)$ 与 $g(x)$ 的图像有相同的对称轴",
+    "answer": "B;C"
+  },
+  {
+    "question": "10. 抛物线 $C: \\mathrm{y}^{2}=4 \\mathrm{x}$ 的准线为 $l, P$ 为 $C$ 上的动点，过 $P$ 作 $\\odot \\mathrm{A}: \\mathrm{x}^{2}+(\\mathrm{y}-4)^{2}=1$ 的一条切线， $Q$ 为切点, 过 $P$ 作 $l$ 的垂线, 垂足为 $B$, 则 ( )\nA. $\\quad l$ 与 $\\odot \\mathrm{A}$ 相切\nB. 当 $P, A, B$ 三点共线时, $\\mid \\mathrm{PQ} \\vDash \\sqrt{15}$\nC. 当 $|P B|=2$ 时, $P A \\perp A B$\nD. 满足 $|P A|=|P B|$ 的点 $P$ 有且仅有 2 个",
+    "answer": "A;B;D"
+  },
+  {
+    "question": "11. 设函数 $\\mathrm{f}(\\mathrm{x})=2 \\mathrm{x}^{3}-3 \\mathrm{ax}{ }^{2}+1$ ，则 $(\\quad)$\nA. 当 $a>1$ 时, $f(x)$ 有三个零点\nB. 当 $a<0$ 时, $x=0$ 是 $f(x)$ 的极大值点\nC. 存在 $a, b$, 使得 $\\mathrm{x}=\\mathrm{b}$ 为曲线 $\\mathrm{y}=\\mathrm{f}(\\mathrm{x})$ 的对称轴\nD. 存在 $a$ ，使得点 $(1, f(1))$ 为曲线 $y=f(x)$ 的对称中心",
+    "answer": "A;D"
+  },
+  {
+    "question": "12. 记 $S_{n}$ 为等差数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和，若 $a_{3}+a_{4}=7 ， 3 a_{2}+a_{5}=5$ ，则 $S_{10}=$ $\\qquad$ .",
+    "answer": "95"
+  },
+  {
+    "question": "13. 已知 $\\alpha$ 为第一象限角, $\\beta$ 为第三象限角, $\\tan \\alpha+\\tan \\beta=4, \\tan \\alpha \\tan \\beta=\\sqrt{2}+1$, 则 $\\sin (\\alpha+\\beta)=$ $\\qquad$ .",
+    "answer": "-\\frac{2\\sqrt{2}}{3}"
+  },
+  {
+    "question": "14. 在如图的 $4 \\times 4$ 方格表中选 4 个方格，要求每行和每列均恰有一个方格被选中，则共有 $\\qquad$ 种选法，在所有符合上述要求的选法中，选中方格中的 4 个数之和的最大值是 $\\qquad$ .\n\n| 11 | 21 | 31 | 40 |\n| :--- | :--- | :--- | :--- |\n| 12 | 22 | 33 | 42 |\n| 13 | 22 | 33 | 43 |\n| 15 | 24 | 34 | 44 |",
+    "answer": "24;112"
+  },
+  {
+    "question": "15. 记 $\\triangle \\mathrm{ABC}$ 的内角 $A, B, C$ 的对边分别为 $a, b, c$, 已知 $\\sin \\mathrm{A}+\\sqrt{3} \\cos \\mathrm{A}=2$.\n(1) 求 $A$.\n（2）若 $a=2 ， \\sqrt{2} b \\sin C=c \\sin 2 B$, 求 $\\triangle A B C$ 的周长.",
+    "answer": "\\frac{\\pi}{6};2+\\sqrt{6}+3\\sqrt{2}"
+  },
+  {
+    "question": "16. 已知函数 $\\mathrm{f}(\\mathrm{x})=e^{\\mathrm{x}}-\\mathrm{ax}-\\mathrm{a}^{3}$.\n（1）当 $a=1$ 时，求曲线 $y=f(x)$ 在点 $(1, f(1))$ 处的切线方程；\n（2）若 $\\mathrm{f}(\\mathrm{x})$ 有极小值，且极小值小于 0 ，求 $a$ 的取值范围。",
+    "answer": "(e-1)x-y-1=0;(1,+\\infty)"
+  },
+  {
+    "question": "17. 如图, 平面四边形 $A B C D$ 中, $\\mathrm{AB}=8, \\mathrm{CD}=3, \\mathrm{AD}=5 \\sqrt{3}, \\angle \\mathrm{ADC}=90^{\\circ}, \\angle \\mathrm{BAD}=30^{\\circ}$, 点 $E$, $F$ 满足 $\\overrightarrow{\\mathrm{AE}}=\\frac{2}{5} \\overrightarrow{\\mathrm{AD}}, \\overrightarrow{\\mathrm{AF}}=\\frac{1}{2} \\overrightarrow{\\mathrm{AB}}$, 将 $\\triangle \\mathrm{AEF}$ 沿 $E F$ 对折至 $\\triangle \\mathrm{PEF}$ ，使得 $\\mathrm{PC}=4 \\sqrt{3}$ 。\n\n求面 $P C D$ 与面 $P B F$ 所成的二面角的正弦值.",
+    "answer": "8\\sqrt{65}/65"
+  },
+  {
+    "question": "18. 某投篮比赛分为两个阶段，每个参赛队由两名队员组成，比赛具体规则如下：第一阶段由参赛队中一名队员投篮 3 次，若 3 次都未投中，则该队被淘汰，比赛成员为 0 分；若至少投中一次，则该队进入第二阶段，由该队的另一名队员投篮 3 次，每次投中得 5 分，未投中得 0 分。该队的比赛成绩为第二阶段的得分总和。某参赛队由甲、乙两名队员组成，设甲每次投中的概率为 $p$ ，乙每次投中的概率为 $q$ ，各次投中与否相互独立。\n(1) 若 $p=0.4, q=0.5$, 甲参加第一阶段比赛, 求甲、乙所在队的比赛成绩不少于 5 分的概率.\n（2） 假设 $0<\\mathrm{p}<\\mathrm{q}$ ，\n（i）为使得甲、乙所在队的比赛成绩为 15 分的概率最大，应该由谁参加第一阶段比赛？\n（ii）为使得甲、乙，所在队的比赛成绩的数学期望最大，应该由谁参加第一阶段比赛？",
+    "answer": "0.686;甲;甲"
+  },
+  {
+    "question": "19. 已知双曲线 $C: x^{2}-y^{2}=m(m>0)$, 点 $P_{1}(5,4)$ 在 $C$ 上, $k$ 为常数, $0<k<1$. 按照如下方式依次构造点 $P_{n}(n=2,3, \\ldots)$, 过 $P_{n-1}$ 作斜率为 $k$ 的直线与 $C$ 的左支交于点 $Q_{n-1}$, 令 $P_{n}$ 为 $Q_{n-1}$ 关于 $y$ 轴的对称点,记 $P_{n}$ 的坐标为 $\\left(x_{n}, y_{n}\\right)$.\n(1) 若 $k=\\frac{1}{2}$, 求 $\\mathrm{x}_{2}, \\mathrm{y}_{2}$.",
+    "answer": "(3, 0)"
+  }
+]
