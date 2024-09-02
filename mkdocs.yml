@@ -31,3 +31,4 @@ nav:
   - Evaluation:
       - GSM8K Eval: gsm8k_eval.md
       - MATH Eval: MATH_eval.md
+      - Gaokao Eval: gaokao_eval.md

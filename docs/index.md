@@ -2,7 +2,7 @@
 
 欢迎来到`LLM Math Solver`项目，本项目旨在使用大模型来解决数学习题.
 
-> 最新的微调模型`QWen-2-72B-Instruct-math-v2`的[Demo体验网址](https://9017a82f6b45143294.gradio.live)，有效期三天，截止2024年8月30日晚11点，如有需要，后续会提供稳定的web服务！
+> 最新的微调模型`QWen-2-72B-Instruct-math-v2`的[Demo体验网址](https://54029690671c092edf.gradio.live)，有效期三天，截止2024年8月30日晚11点，如有需要，后续会提供稳定的web服务！
 
 > 最新的微调模型`QWen-2-72B-Instruct-math`已在Huggingface上发布，可以下载使用，[点击这里](https://huggingface.co/jclian91/Qwen2-72B-Instruct-math)。
 
@@ -12,10 +12,9 @@
 - [demo](demo.pdf)
 - [examples](examples.pdf)
 - [sft model](llm_sft.md)
-- 数学能力评测
-  - [GSM8K](gsm8k_eval.md)
-  - [MATH](MATH_eval.md)
-  - [高考数学题评测](gaokao_eval.md)
+- [GSM8K Evaluation](gsm8k_eval.md)
+- [MATH Evaluation](MATH_eval.md)
+- [高考数学题评测](gaokao_eval.md)
 
 # Evaluation
 

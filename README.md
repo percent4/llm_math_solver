@@ -9,7 +9,7 @@
 <h1></h1>
 </div>
 
-> 最新的微调模型`QWen-2-72B-Instruct-math-v2`的[Demo体验网址](https://9017a82f6b45143294.gradio.live)，有效期三天，截止2024年8月30日晚11点，如有需要，后续会提供稳定的web服务！
+> 最新的微调模型`QWen-2-72B-Instruct-math-v2`的[Demo体验网址](https://54029690671c092edf.gradio.live)，有效期三天，截止2024年8月30日晚11点，如有需要，后续会提供稳定的web服务！
 
 > 最新的微调模型`QWen-2-72B-Instruct-math`已在Huggingface上发布，可以下载使用，[点击这里](https://huggingface.co/jclian91/Qwen2-72B-Instruct-math)。
 
