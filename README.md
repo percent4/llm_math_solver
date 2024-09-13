@@ -96,7 +96,7 @@
 | GPT-o1-preview             | 123 | 120 | 113 | 118.67 |
 | DeepSeek-Code-V2.5         | 104 | 95  | 92  | 97     |
 
-![score_0913_1.jpg](https://s2.loli.net/2024/09/13/u369tIv8padZBFR.png)
+![score_0913_1.jpg](https://s2.loli.net/2024/09/13/ZiaDoUx5VX6Bb2Q.png)
 
 按题型(单项选择题, 多项选择题, 填空题, 解答题)进行统计，测评结果如下：
 
@@ -123,7 +123,7 @@
 | 解答题 |GPT-o1-preview| 50  | 50  | 45  | 48.33 |
 | 解答题 |DeepSeek-Code-V2.5| 50  | 38  | 38  | 42    |
 
-![score_0913_2.jpg](https://s2.loli.net/2024/09/13/8GksrevncBmRLwM.png)
+![score_0913_2.jpg](https://s2.loli.net/2024/09/13/4dSbAsM78QflPp1.png)
 
 ### 评测数据集存在问题
 
