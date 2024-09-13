@@ -62,14 +62,13 @@ for i, item in enumerate(data):
     print(f"第{i+1}题：{item['question']}")
     question = item["question"]
 
-    # using openai chat api to get the response, model: gpt-4o
+    # using openai chat api to get the response, model: gpt-4o, o1-preview
     messages = [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": f"题目：{question}"}
+        # {"role": "system", "content": system_prompt},
+        {"role": "user", "content": f"{system_prompt}\n题目：{question}"}
     ]
     result = client.chat.completions.create(messages=messages,
-                                            model="gpt-4o",
-                                            temperature=0.2)
+                                            model="o1-preview-2024-09-12")
     answer = result.choices[0].message.content
     print(answer)
     predict_answers.append({
@@ -80,5 +79,5 @@ for i, item in enumerate(data):
 
 
 # save the predict answers to json file
-with open("openai_predict_3.json", "w", encoding="utf-8") as file:
+with open("openai_o1_predict_3.json", "w", encoding="utf-8") as file:
     json.dump(predict_answers, file, ensure_ascii=False, indent=4)
