@@ -534,7 +534,7 @@
 <h2 id="2024ii">2024新高考II卷高考真题数学能力测评</h2>
 <ul>
 <li>去除试卷中的证明题，总分共130分，计分方式同高考阅卷（这里只考虑最终答案是否正确，不考虑中间过程得分）。</li>
-<li>使用<code>MathPix</code>将高考真题PDF文档转化为带LaTeX格式的Markdown文档，然后分别使用OpenAI(模型为GPT-4o), Claude(模型为claude-3-5-sonnet-20240620), 自研微调模型（基座模型为QWen-2-72B-Instruct）进行解题，得到每道题的解答过程和最终答案，然后与标准答案进行比对，计算总体得分。</li>
+<li>使用<code>MathPix</code>将高考真题PDF文档转化为带LaTeX格式的Markdown文档，然后分别使用OpenAI(模型为GPT-4o, GPT-o1-preview), Claude(模型为claude-3-5-sonnet-20240620), 自研微调模型（基座模型为QWen-2-72B-Instruct）, DeepSeek-code-V2.5模型进行解题，得到每道题的解答过程和最终答案，然后与标准答案进行比对，计算总体得分。</li>
 <li>评测的具体细节可参考 <code>eval/gaokao</code> 文件夹。</li>
 </ul>
 <p>模型的总体得分评测结果如下：</p>
@@ -550,14 +550,14 @@
 </thead>
 <tbody>
 <tr>
-<td>OpenAI</td>
+<td>GPT-4o</td>
 <td>68</td>
 <td>82</td>
 <td>66</td>
 <td>72.0</td>
 </tr>
 <tr>
-<td>Claude</td>
+<td>claude-3.5-sonnet-20240620</td>
 <td>68</td>
 <td>65</td>
 <td>63</td>
@@ -570,9 +570,23 @@
 <td>56</td>
 <td>60.33</td>
 </tr>
+<tr>
+<td>GPT-o1-preview</td>
+<td>123</td>
+<td>120</td>
+<td>113</td>
+<td>118.67</td>
+</tr>
+<tr>
+<td>DeepSeek-Code-V2.5</td>
+<td>104</td>
+<td>95</td>
+<td>92</td>
+<td>97</td>
+</tr>
 </tbody>
 </table>
-<p><img alt="score_1.jpg" src="https://s2.loli.net/2024/08/29/lu5CJ1ZxeoOprF2.png" /></p>
+<p><img alt="score_0913_1.jpg" src="https://s2.loli.net/2024/09/13/ZiaDoUx5VX6Bb2Q.png" /></p>
 <p>按题型(单项选择题, 多项选择题, 填空题, 解答题)进行统计，测评结果如下：</p>
 <table>
 <thead>
@@ -611,6 +625,22 @@
 <td>16.67</td>
 </tr>
 <tr>
+<td>单项选择题</td>
+<td>GPT-o1-preview</td>
+<td>40</td>
+<td>40</td>
+<td>35</td>
+<td>38.33</td>
+</tr>
+<tr>
+<td>单项选择题</td>
+<td>DeepSeek-Code-V2.5</td>
+<td>30</td>
+<td>35</td>
+<td>30</td>
+<td>31.67</td>
+</tr>
+<tr>
 <td>多项选择题</td>
 <td>OpenAI</td>
 <td>14</td>
@@ -633,6 +663,22 @@
 <td>6</td>
 <td>0</td>
 <td>2</td>
+</tr>
+<tr>
+<td>多项选择题</td>
+<td>GPT-o1-preview</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+<td>18</td>
+</tr>
+<tr>
+<td>多项选择题</td>
+<td>DeepSeek-Code-V2.5</td>
+<td>12</td>
+<td>12</td>
+<td>12</td>
+<td>12</td>
 </tr>
 <tr>
 <td>填空题</td>
@@ -659,6 +705,22 @@
 <td>10.67</td>
 </tr>
 <tr>
+<td>填空题</td>
+<td>GPT-o1-preview</td>
+<td>15</td>
+<td>12</td>
+<td>15</td>
+<td>14</td>
+</tr>
+<tr>
+<td>填空题</td>
+<td>DeepSeek-Code-V2.5</td>
+<td>12</td>
+<td>10</td>
+<td>12</td>
+<td>11.33</td>
+</tr>
+<tr>
 <td>解答题</td>
 <td>OpenAI</td>
 <td>12</td>
@@ -682,9 +744,25 @@
 <td>31</td>
 <td>31</td>
 </tr>
+<tr>
+<td>解答题</td>
+<td>GPT-o1-preview</td>
+<td>50</td>
+<td>50</td>
+<td>45</td>
+<td>48.33</td>
+</tr>
+<tr>
+<td>解答题</td>
+<td>DeepSeek-Code-V2.5</td>
+<td>50</td>
+<td>38</td>
+<td>38</td>
+<td>42</td>
+</tr>
 </tbody>
 </table>
-<p><img alt="score_2.jpg" src="https://s2.loli.net/2024/08/29/Cg4OhHGFMTArLpI.png" /></p>
+<p><img alt="score_0913_2.jpg" src="https://s2.loli.net/2024/09/13/4dSbAsM78QflPp1.png" /></p>
 
 
 
